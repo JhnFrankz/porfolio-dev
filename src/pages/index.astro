@@ -6,6 +6,11 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Welcome to Astro.">
   <main>
     <section class="w-full lg:w-[740px] mx-auto py-44">
+      <img
+        class="rounded-full w-12 h-12 mb-4"
+        src="https://i.ibb.co/FhPKkGd/Frank.jpg"
+        alt="Midudev photo"
+      />
       <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
         Hey, soy JhnFrankz <a
           href="https://www.linkedin.com/in/jhanfrankespinozaescudero/"
@@ -16,12 +21,24 @@ import Layout from "../layouts/Layout.astro";
           <Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
-      <h2 class="text-xl opacity-80">
-        Ingeniero de Sistemas y Desarrollador web, De Ica, Perú 🇵🇪.
-        Especializado en crear aplicaciones únicas.
+      <h2 class="text-2xl text-wrap">
+        <span>Experiencia en proyectos personales.</span>
+        <span class="text-yellow-200/90"
+          >Ingeniero de Sistemas y Desarrollador web</span
+        >
+        .<span class="text-red-200/90"> De Ica, Perú</span>.
+        <span class="opacity-75"
+          >Especializado en crear aplicaciones únicas.</span
+        >
       </h2>
 
-      <ul></ul>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/jhanfrankespinozaescudero/">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
     </section>
   </main>
 </Layout>
