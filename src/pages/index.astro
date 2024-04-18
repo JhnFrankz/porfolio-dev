@@ -1,6 +1,9 @@
 ---
 import Badge from "../components/Badge.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 import SocialPill from "../components/SocialPill.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
 
 import GitHubIcon from "../components/icons/GitHub.astro";
 import LinkedInIcon from "../components/icons/LinkedIn.astro";
@@ -14,9 +17,9 @@ import Layout from "../layouts/Layout.astro";
   description="Contrata a JhnFrankz para crear tu aplicación web o móvil. Desarrollador web especializado en crear aplicaciones únicas."
 >
   <main>
-    <section class="w-full lg:w-[740px] mx-auto py-44">
+    <SectionContainer class="py-44 pb-24">
       <img
-        class="rounded-full w-12 h-12 mb-4"
+        class="rounded-full size-12 mb-4"
         src="https://i.ibb.co/FhPKkGd/Frank.jpg"
         alt="Midudev photo"
       />
@@ -45,20 +48,28 @@ import Layout from "../layouts/Layout.astro";
         <SocialPill
           href="https://www.linkedin.com/in/jhanfrankespinozaescudero"
         >
-          <LinkedInIcon class="w-6 h-6" />
+          <LinkedInIcon class="size-6" />
           LinkedIn
         </SocialPill>
 
         <SocialPill href="https://github.com/JhnFrankz">
-          <GitHubIcon class="w-6 h-6" />
+          <GitHubIcon class="size-6" />
           GitHub
         </SocialPill>
 
         <SocialPill href="https://github.com/JhnFrankz">
-          <MailIcon class="w-6 h-6" />
+          <MailIcon class="size-6" />
           jhnfrankz@gmail.com
         </SocialPill>
       </nav>
-    </section>
+    </SectionContainer>
+
+    <SectionContainer>
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Briefcase class="size-7" />
+        Experiencia en proyectos
+      </h2>
+      <Experience />
+    </SectionContainer>
   </main>
 </Layout>
