@@ -1,0 +1,28 @@
+---
+const PROJECTS = [
+  {
+    title: "SVGL - A beautiful library with SVG logos",
+    description:
+      "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
+    link: "https://svgl.vercel.app/",
+    github: "https://github.com/pheralb/svgl",
+    image: "/projects/svgl.webp",
+    tags: ["Next.js", "Tailwind CSS", "React"],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ title, image, description, tags }) => (
+    <article>
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <ul>
+        {tags.map((tag) => (
+          <li>{tag}</li>
+        ))}
+      </ul>
+      <img src={image} alt={`Captura de pantalla del proyecto ${image}`} />
+    </article>
+  ))
+}
