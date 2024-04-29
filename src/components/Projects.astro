@@ -1,4 +1,5 @@
 ---
+import AstroIcon from "./icons/AstroIcon.astro";
 import NextJS from "./icons/NextJS.astro";
 import Tailwind from "./icons/Tailwind.astro";
 
@@ -13,24 +14,29 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  ASTRO: {
+    name: "Astro",
+    class: "bg-black text-white",
+    icon: AstroIcon,
+  },
 };
 
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Porfolio - Mi portafolio personal",
     description:
-      "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Creado con Astro y Tailwind CSS. Es un portafolio personal donde muestro mis proyectos y habilidades. Optimizado para SEO y performance.",
+    link: "#",
+    github: "https://github.com/JhnFrankz/porfolio-dev",
+    image: "/projects/porfolio-dev.webp",
+    tags: [TAGS.ASTRO, TAGS.TAILWIND],
   },
 ];
 ---
 
 {
   PROJECTS.map(({ title, image, description, tags }) => (
-    <article>
+    <article class="mb-6">
       <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
       <p class="text-lg mb-2 text-pretty">{description}</p>
       <ul class="flex gap-x-2 flex-row mb-2">
